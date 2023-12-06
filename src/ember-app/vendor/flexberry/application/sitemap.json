@@ -1,0 +1,22 @@
+﻿{
+  "applicationCaption": "Proekt4",
+  "applicationTitle": "Proekt4",
+  "items": [
+    {
+      "link": null,
+      "menuName": "proekt4",
+      "caption": "Proekt4",
+      "title": "Proekt4",
+      "children": [
+        {
+          "link": "i-i-s-proekt4-справ-сотр-l",
+          "menuName": null,
+          "caption": "СправСотрL",
+          "title": "Справ сотр L",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

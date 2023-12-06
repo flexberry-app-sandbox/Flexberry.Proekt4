@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proekt4-справ-сотр-e",
+  "editForm": "i-i-s-proekt4-справ-сотр-e",
+  "external": false,
+  "caption": "Справ сотр L",
+  "name": "IISProekt4СправСотрL",
+  "className": "СправСотрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt4-справ-сотр",
+      "modelProjection": "СправСотрL"
+    }
+  ]
+}

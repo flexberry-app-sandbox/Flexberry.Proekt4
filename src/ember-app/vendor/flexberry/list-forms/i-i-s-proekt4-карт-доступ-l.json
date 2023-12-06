@@ -1,0 +1,15 @@
+﻿{
+  "newForm": null,
+  "editForm": null,
+  "external": false,
+  "caption": "Карт доступ",
+  "name": "IISProekt4КартДоступL",
+  "className": "КартДоступL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt4-карт-доступ",
+      "modelProjection": "КартДоступL"
+    }
+  ]
+}

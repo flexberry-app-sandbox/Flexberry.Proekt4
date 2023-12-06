@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proekt4-справ-род-e",
+  "editForm": "i-i-s-proekt4-справ-род-e",
+  "external": false,
+  "caption": "Справ род",
+  "name": "IISProekt4СправРодL",
+  "className": "СправРодL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt4-справ-род",
+      "modelProjection": "СправРодL"
+    }
+  ]
+}

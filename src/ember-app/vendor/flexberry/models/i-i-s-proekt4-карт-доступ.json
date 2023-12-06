@@ -1,0 +1,155 @@
+﻿{
+  "name": "IISProekt4КартДоступ",
+  "modelName": "i-i-s-proekt4-карт-доступ",
+  "className": "КартДоступ",
+  "nameSpace": "IIS.Proekt4",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерКарты",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "справСотр",
+      "relatedTo": "i-i-s-proekt4-справ-сотр",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "справУчен",
+      "relatedTo": "i-i-s-proekt4-справ-учен",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КартДоступE",
+      "modelName": "i-i-s-proekt4-карт-доступ",
+      "attrs": [
+        {
+          "name": "номерКарты",
+          "caption": "Номер карты",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИОУченика",
+          "lookupValueField": "фИОУченика",
+          "relationName": "СправУчен",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОУченика",
+              "caption": "Ф и о ученика",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Справ учен",
+          "name": "справУчен",
+          "relatedTo": "i-i-s-proekt4-справ-учен",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ФИОСотр",
+          "lookupValueField": "фИОСотр",
+          "relationName": "СправСотр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОСотр",
+              "caption": "Ф и о сотр",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Справ сотр",
+          "name": "справСотр",
+          "relatedTo": "i-i-s-proekt4-справ-сотр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "КартДоступL",
+      "modelName": "i-i-s-proekt4-карт-доступ",
+      "attrs": [
+        {
+          "name": "номерКарты",
+          "caption": "Номер карты",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправУчен",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОУченика",
+              "caption": "Ф и о ученика",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Ф и о ученика",
+          "name": "справУчен",
+          "relatedTo": "i-i-s-proekt4-справ-учен",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправСотр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОСотр",
+              "caption": "Ф и о сотр",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Ф и о сотр",
+          "name": "справСотр",
+          "relatedTo": "i-i-s-proekt4-справ-сотр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

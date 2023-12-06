@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISProekt4СправКлас",
+  "modelName": "i-i-s-proekt4-справ-клас",
+  "className": "СправКлас",
+  "nameSpace": "IIS.Proekt4",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "классы",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СправКласE",
+      "modelName": "i-i-s-proekt4-справ-клас",
+      "attrs": [
+        {
+          "name": "классы",
+          "caption": "Классы",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СправКласL",
+      "modelName": "i-i-s-proekt4-справ-клас",
+      "attrs": [
+        {
+          "name": "классы",
+          "caption": "Классы",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

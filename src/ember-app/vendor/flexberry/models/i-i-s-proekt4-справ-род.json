@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISProekt4СправРод",
+  "modelName": "i-i-s-proekt4-справ-род",
+  "className": "СправРод",
+  "nameSpace": "IIS.Proekt4",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "фИОРод",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СправРодE",
+      "modelName": "i-i-s-proekt4-справ-род",
+      "attrs": [
+        {
+          "name": "фИОРод",
+          "caption": "Ф и о род",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СправРодL",
+      "modelName": "i-i-s-proekt4-справ-род",
+      "attrs": [
+        {
+          "name": "фИОРод",
+          "caption": "Ф и о род",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Справ клас",
+  "name": "IISProekt4СправКласE",
+  "className": "СправКласE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt4-справ-клас",
+      "modelProjection": "СправКласE"
+    }
+  ]
+}

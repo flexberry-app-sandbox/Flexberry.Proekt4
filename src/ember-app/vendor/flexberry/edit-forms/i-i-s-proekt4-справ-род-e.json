@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Справ род",
+  "name": "IISProekt4СправРодE",
+  "className": "СправРодE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt4-справ-род",
+      "modelProjection": "СправРодE"
+    }
+  ]
+}

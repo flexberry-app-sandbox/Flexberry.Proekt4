@@ -1,0 +1,155 @@
+﻿{
+  "name": "IISProekt4СправУчен",
+  "modelName": "i-i-s-proekt4-справ-учен",
+  "className": "СправУчен",
+  "nameSpace": "IIS.Proekt4",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "фИОУченика",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "справКлас",
+      "relatedTo": "i-i-s-proekt4-справ-клас",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "справРод",
+      "relatedTo": "i-i-s-proekt4-справ-род",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СправУченE",
+      "modelName": "i-i-s-proekt4-справ-учен",
+      "attrs": [
+        {
+          "name": "фИОУченика",
+          "caption": "Ф и о ученика",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИОРод",
+          "lookupValueField": "фИОРод",
+          "relationName": "СправРод",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОРод",
+              "caption": "Ф и о род",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Справ род",
+          "name": "справРод",
+          "relatedTo": "i-i-s-proekt4-справ-род",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Классы",
+          "lookupValueField": "классы",
+          "relationName": "СправКлас",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "классы",
+              "caption": "Классы",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Справ клас",
+          "name": "справКлас",
+          "relatedTo": "i-i-s-proekt4-справ-клас",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СправУченL",
+      "modelName": "i-i-s-proekt4-справ-учен",
+      "attrs": [
+        {
+          "name": "фИОУченика",
+          "caption": "Ф и о ученика",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправРод",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОРод",
+              "caption": "Ф и о род",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Ф и о род",
+          "name": "справРод",
+          "relatedTo": "i-i-s-proekt4-справ-род",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправКлас",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "классы",
+              "caption": "Классы",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Классы",
+          "name": "справКлас",
+          "relatedTo": "i-i-s-proekt4-справ-клас",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

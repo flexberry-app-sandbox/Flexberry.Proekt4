@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СправДол",
+      "projection": "СправДолL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Справ сотр E",
+  "name": "IISProekt4СправСотрE",
+  "className": "СправСотрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt4-справ-сотр",
+      "modelProjection": "СправСотрE"
+    }
+  ]
+}

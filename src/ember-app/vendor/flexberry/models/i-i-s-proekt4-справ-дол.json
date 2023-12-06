@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISProekt4СправДол",
+  "modelName": "i-i-s-proekt4-справ-дол",
+  "className": "СправДол",
+  "nameSpace": "IIS.Proekt4",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "должность",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СправДолE",
+      "modelName": "i-i-s-proekt4-справ-дол",
+      "attrs": [
+        {
+          "name": "должность",
+          "caption": "Должность",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СправДолL",
+      "modelName": "i-i-s-proekt4-справ-дол",
+      "attrs": [
+        {
+          "name": "должность",
+          "caption": "Должность",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Справ дол",
+  "name": "IISProekt4СправДолE",
+  "className": "СправДолE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt4-справ-дол",
+      "modelProjection": "СправДолE"
+    }
+  ]
+}
