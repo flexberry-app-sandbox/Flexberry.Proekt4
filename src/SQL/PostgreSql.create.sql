@@ -6,6 +6,7 @@
 CREATE TABLE СправСотр (
  primaryKey UUID NOT NULL,
  ФИОСотр VARCHAR(255) NULL,
+ Кабинет VARCHAR(255) NULL,
  СправДол UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 

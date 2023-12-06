@@ -9,6 +9,8 @@ CREATE TABLE "СправСотр"
 
 	"ФИОСотр" NVARCHAR2(255) NULL,
 
+	"Кабинет" NVARCHAR2(255) NULL,
+
 	"СправДол" RAW(16) NOT NULL,
 
 	 PRIMARY KEY ("primaryKey")

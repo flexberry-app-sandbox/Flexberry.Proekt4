@@ -22,7 +22,7 @@ export default Controller.extend({
             link: 'i-i-s-proekt4-справ-сотр-l',
             caption: i18n.t('forms.application.sitemap.proekt4.i-i-s-proekt4-справ-сотр-l.caption'),
             title: i18n.t('forms.application.sitemap.proekt4.i-i-s-proekt4-справ-сотр-l.title'),
-            icon: 'list',
+            icon: 'paperclip',
             children: null
           }]
         }

@@ -6,6 +6,8 @@ CREATE TABLE [СправСотр] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
 
+	 [Кабинет] VARCHAR(255)  NULL,
+
 	 [ФИОСотр] VARCHAR(255)  NULL,
 
 	 [СправДол] UNIQUEIDENTIFIER  NOT NULL,

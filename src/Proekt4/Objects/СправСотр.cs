@@ -32,14 +32,18 @@ namespace IIS.Proekt4
     [View("СправСотрE", new string[] {
             "ФИОСотр as \'Сотрудник\'",
             "СправДол as \'Должность\'",
-            "СправДол.Должность as \'Должность\'"})]
+            "СправДол.Должность as \'Нет\'",
+            "Кабинет as \'Кабинет\'"})]
     [View("СправСотрL", new string[] {
             "ФИОСотр as \'Сотрудник\'",
-            "СправДол.Должность as \'Должность\'"})]
+            "СправДол.Должность as \'Нет\'",
+            "Кабинет as \'Кабинет\'"})]
     public class СправСотр : ICSSoft.STORMNET.DataObject
     {
         
         private string fФИОСотр;
+        
+        private string fКабинет;
         
         private IIS.Proekt4.СправДол fСправДол;
         
@@ -47,6 +51,38 @@ namespace IIS.Proekt4
 
         // *** End programmer edit section *** (СправСотр CustomMembers)
 
+        
+        /// <summary>
+        /// Кабинет.
+        /// </summary>
+        // *** Start programmer edit section *** (СправСотр.Кабинет CustomAttributes)
+
+        // *** End programmer edit section *** (СправСотр.Кабинет CustomAttributes)
+        [StrLen(255)]
+        public virtual string Кабинет
+        {
+            get
+            {
+                // *** Start programmer edit section *** (СправСотр.Кабинет Get start)
+
+                // *** End programmer edit section *** (СправСотр.Кабинет Get start)
+                string result = this.fКабинет;
+                // *** Start programmer edit section *** (СправСотр.Кабинет Get end)
+
+                // *** End programmer edit section *** (СправСотр.Кабинет Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (СправСотр.Кабинет Set start)
+
+                // *** End programmer edit section *** (СправСотр.Кабинет Set start)
+                this.fКабинет = value;
+                // *** Start programmer edit section *** (СправСотр.Кабинет Set end)
+
+                // *** End programmer edit section *** (СправСотр.Кабинет Set end)
+            }
+        }
         
         /// <summary>
         /// ФИОСотр.
